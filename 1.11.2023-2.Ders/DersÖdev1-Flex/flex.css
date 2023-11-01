@@ -1,0 +1,271 @@
+/* RESET CSS START */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  /* Sayfanın Genel Font ve Renk Özellikleri Burada Verildi. */
+  color: #fff;
+  background-color: #1abc9c;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  /* Sayfanın Genel Font ve Renk Özellikleri Burada Verildi. */
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* RESET CSS END */
+
+.container {
+  background: #2d3e50;
+}
+
+#navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  margin: 0 300px;
+  height: 56px;
+}
+
+#logo {
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 5px 0;
+}
+
+#logo {
+  cursor: pointer;
+}
+
+#menu {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+
+#menu li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 18px;
+}
+
+#menu li a:hover {
+  color: #1abc9c;
+  transition: 0.5s;
+}
+
+.sectionHome {
+  display: flex;
+  min-height: 80vh;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionHome .circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-color: #2d3e50;
+}
+
+.sectionHome .homeText {
+  text-transform: uppercase;
+  font-size: 64px;
+  margin: 24px 0;
+  animation-name: shakeText;
+  animation-duration: 4s;
+}
+
+.sectionHome .homeText:hover {
+  cursor: pointer;
+  transition: 1s ease-in-out;
+}
+
+/* .homeText Animation Start */
+@keyframes shakeText {
+  0% {
+    rotate: 3deg;
+  }
+  25% {
+    rotate: -6deg;
+  }
+  50% {
+    rotate: 3deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+/* .homeText Animation End */
+
+.sectionHome .line {
+  width: 50%;
+  height: 2px;
+  color: #fff;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  margin: 24px 0;
+  animation-name: lineGo;
+  animation-duration: 3s;
+}
+
+/* .line Animation Start */
+@keyframes lineGo {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
+/* .line Animation End */
+
+.sectionHome .homeInfo {
+  font-size: 24px;
+  opacity: 1;
+  animation-name: showInfo;
+  animation-duration: 4s;
+}
+
+.sectionHome .homeInfo:hover {
+  cursor: pointer;
+  color: #2d3e50;
+  transition: 1s;
+}
+
+/* .homeInfo Animation Start */
+@keyframes showInfo {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+/* .homeInfo Animation End */
