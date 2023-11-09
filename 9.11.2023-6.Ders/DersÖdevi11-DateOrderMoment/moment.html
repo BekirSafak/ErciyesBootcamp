@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Moment CSS Link -->
+    <link rel="stylesheet" href="moment.css">
+
+    <title>6.Ders - Tarihlerine Göre Siparişleri Listeleme / Moment.JS Ödevi</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box first">
+            <h1 class="orderHead">1996 Aralıkta Kaç Adet Sipariş Var? <span class="countOrder"></span> </h1>
+            <ul class="orderList">
+
+            </ul>
+
+        </div>
+
+        <div class="box boxScroll second">
+            <h1 class="orderDateHead">Geciken Sipariş Tarihleri 5 ile 10 Gün Arasında Kaç Sipariş Var? <span
+                    class="countShip"></span>
+            </h1>
+            <div class="buttonBox">
+                <button class="orderDateBTN" onclick="orderShow()">Geciken Siparişler</button>
+            </div>
+            <ul class="orderDateList .sc::-webkit-scrollbar-thumb">
+
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Moment CDN Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
+    <!-- Moment JS Link -->
+    <script src="moment.js"></script>
+</body>
+
+</html>
