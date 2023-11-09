@@ -1,0 +1,202 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  line-height: 1;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+body .container .box {
+  width: 300px;
+  height: 400px;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: relative;
+}
+body .container .box::before {
+  position: absolute;
+  content: "";
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+  z-index: -1;
+}
+body .container .box::after {
+  position: absolute;
+  content: "";
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+  z-index: -2;
+  filter: blur(50px);
+}
+body .container .box .numberList {
+  color: #e100ff;
+  font-weight: bolder;
+}
+body .container .buttonBox {
+  position: absolute;
+  bottom: 10%;
+}
+body .container .buttonBox .numberBTN {
+  background: linear-gradient(235deg, #e100ff, #060c21, #3700ff);
+  color: #e100ff;
+  font-weight: bolder;
+  padding: 5px 30px;
+  outline: none !important;
+  border-color: #e100ff;
+  box-shadow: 0 0 38px #e100ff;
+  border-radius: 20px;
+}
+body .container .first::before {
+  background: linear-gradient(235deg, #e100ff, #060c21, #3700ff);
+}
+body .container .first::after {
+  background: linear-gradient(235deg, #e100ff, #060c21, #3700ff);
+}/*# sourceMappingURL=number.css.map */
