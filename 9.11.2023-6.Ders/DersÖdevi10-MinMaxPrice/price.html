@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Price CSS Link -->
+    <link rel="stylesheet" href="price.css">
+
+    <title>6.Ders - Min ve Max Fiyata Göre Firma/Stok Ders Ödevi</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box first">
+            <label class="minLabel" for="">Min Fiyat: </label>
+            <input class="minPrice" type="number">
+
+            <label class="maxLabel" for="">Max Fiyat: </label>
+            <input class="maxPrice" type="number">
+
+        </div>
+
+        <div class="box boxScroll second">
+            <div class="buttonBox">
+                <button class="filterBTN" onclick="filterPrice()">Araştır</button>
+            </div>
+            <ul class="filterList .sc::-webkit-scrollbar-thumb">
+
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Price JS Link -->
+    <script src="price.js"></script>
+</body>
+
+</html>
