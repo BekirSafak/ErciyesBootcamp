@@ -221,6 +221,13 @@ body {
             }
         }
 
+        @media screen and (max-width: 1024px) {
+            .box {
+                width: 90%;
+                padding: 0 8px;
+            }
+        }
+
         .buttonBox {
             position: absolute;
             bottom: 10%;
@@ -256,6 +263,12 @@ body {
                 background: linear-gradient(235deg, #e100ff, #060c21, #3700ff);
             }
 
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        .container {
+            padding: 0 6px;
         }
     }
 

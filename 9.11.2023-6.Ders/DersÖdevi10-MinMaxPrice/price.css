@@ -231,6 +231,12 @@ body .container .box ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(transparent, #3700ff);
   border-radius: 12px;
 }
+@media screen and (max-width: 1024px) {
+  body .container .box {
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
+}
 body .container .buttonBox {
   position: absolute;
   bottom: 10%;
@@ -257,4 +263,12 @@ body .container .second::before {
 }
 body .container .second::after {
   background: linear-gradient(235deg, #e100ff, #060c21, #3700ff);
+}
+@media screen and (max-width: 1024px) {
+  body .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=price.css.map */

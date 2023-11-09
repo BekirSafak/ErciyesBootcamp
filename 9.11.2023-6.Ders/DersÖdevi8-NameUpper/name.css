@@ -208,6 +208,12 @@ body .container .box .nameList {
   color: #e100ff;
   font-weight: bolder;
 }
+@media screen and (max-width: 1024px) {
+  body .container .box {
+    width: 90%;
+    padding: 0 8px;
+  }
+}
 body .container .buttonBox {
   position: absolute;
   bottom: 10%;
@@ -233,4 +239,9 @@ body .container .third::before {
 }
 body .container .third::after {
   background: linear-gradient(235deg, #e100ff, #060c21, #3700ff);
+}
+@media screen and (max-width: 1024px) {
+  body .container {
+    padding: 0 6px;
+  }
 }/*# sourceMappingURL=name.css.map */
