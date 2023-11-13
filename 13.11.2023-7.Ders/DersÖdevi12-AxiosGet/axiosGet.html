@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- axiosGet CSS Link -->
+    <link rel="stylesheet" href="axiosGet.css">
+
+    <title>7.Ders - Axios Get Örnek</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box first">
+            <h1 class="productsCount">Şirket Sayısı: <span class="countProducts"></span> </h1>
+        </div>
+
+        <div class="box boxScroll second">
+            <h1 class="productsHead">Axios GET işlemi ile listelenebilir şirket isimleri neler? <span
+                    class="countShip"></span>
+            </h1>
+            <div class="buttonBox">
+                <button class="productsBTN" onclick="productsShow()">Şirket İsimleri</button>
+            </div>
+            <ul class="productsNameList .sc::-webkit-scrollbar-thumb">
+
+            </ul>
+        </div>
+
+        <!-- Axios CDN Link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.1/axios.min.js"
+            integrity="sha512-m9S8W3a9hhBHPFAbEIaG7J9P92dzcAWwM42VvJp5n1/M599ldK6Z2st2SfJGsX0QR4LfCVr681vyU5vW8d218w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- axiosGet JS Link -->
+        <script src="axiosGet.js"></script>
+</body>
+
+</html>

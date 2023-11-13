@@ -1,0 +1,283 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@mixin dCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    line-height: 1;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+    @include dCenter();
+
+
+
+    .container {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .box {
+            width: 700px;
+            height: 400px;
+            background: #000;
+            @include dCenter();
+            margin: auto;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: '';
+                top: -2px;
+                bottom: -2px;
+                left: -2px;
+                right: -2px;
+                background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+                z-index: -1;
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                top: -5px;
+                bottom: -5px;
+                left: -5px;
+                right: -5px;
+                background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+                z-index: -2;
+                filter: blur(50px);
+            }
+
+            .productsCount {
+                color: #d40063;
+                font-weight: bolder;
+                margin-top: 12px;
+            }
+
+            .productsHead {
+                color: #3700ff;
+                font-weight: bolder;
+                margin-top: 12px;
+            }
+
+            .productsNameList {
+                color: #e100ff;
+                font-weight: bolder;
+                position: relative;
+                overflow-y: scroll;
+                overflow-x: hidden;
+                width: 100%;
+                padding: 32px;
+                box-sizing: border-box;
+            }
+
+            ::-webkit-scrollbar {
+                width: 12px;
+
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: linear-gradient(transparent, #e100ff);
+                border-radius: 12px;
+            }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: linear-gradient(transparent, #3700ff);
+                border-radius: 12px;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+
+            .box {
+                margin-bottom: 5%;
+                margin-top: 5%;
+            }
+
+
+        }
+
+        .buttonBox {
+            position: absolute;
+            bottom: 10%;
+            right: 5%;
+
+            .productsBTN {
+                background: linear-gradient(235deg, #e100ff, #060c21, #3700ff);
+                color: #e100ff;
+                font-weight: bolder;
+                padding: 5px 30px;
+                outline: none !important;
+                border-color: #e100ff;
+                box-shadow: 0 0 38px #e100ff;
+                border-radius: 20px;
+            }
+        }
+
+        .first {
+            &::before {
+                background: linear-gradient(235deg, #ffbb00, #060c21, #d40063);
+            }
+
+            &::after {
+                background: linear-gradient(235deg, #ffbb00, #060c21, #d40063);
+            }
+        }
+
+        .second {
+            &::before {
+                background: linear-gradient(235deg, #e100ff, #060c21, #3700ff);
+            }
+
+            &::after {
+                background: linear-gradient(235deg, #e100ff, #060c21, #3700ff);
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
