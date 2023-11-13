@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- axiosDelete CSS Link -->
+    <link rel="stylesheet" href="axiosDelete.css">
+
+    <title>7.Ders - Axios Delete Örnek</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box first">
+            <label class="customersLabel" for="">Şirket İsmi</label>
+            <input id="companyName" class="customersInput" type="text">
+
+            <label class="customersLabel" for="">Kullanıcı İsmi</label>
+            <input id="contactName" class="customersInput" type="text">
+
+            <label class="customersLabel" for="">Kullanıcı Ünvanı</label>
+            <input id="contactTitle" class="customersInput" type="text">
+
+            <div class="buttonBox">
+                <button class="addBTN" onclick="postCustormers()">Ekle</button>
+            </div>
+
+        </div>
+
+        <div class="box boxScroll second">
+
+            <label class="idLabel" for="">Silmek İstediğiniz ID?</label>
+            <input id="deleteID" class="idInput" type="text">
+
+            <div class="buttonBox">
+                <button class="deleteBTN" onclick="deleteCustomers()">Sil</button>
+            </div>
+            <ul class="getList .sc::-webkit-scrollbar-thumb">
+
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Axios CDN Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.1/axios.min.js"
+        integrity="sha512-m9S8W3a9hhBHPFAbEIaG7J9P92dzcAWwM42VvJp5n1/M599ldK6Z2st2SfJGsX0QR4LfCVr681vyU5vW8d218w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- axiosDelete JS Link -->
+    <script src="axiosDelete.js"></script>
+</body>
+
+</html>
