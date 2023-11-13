@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- axiosPost CSS Link -->
+    <link rel="stylesheet" href="axiosPost.css">
+
+    <title>7.Ders - Axios Post Örnek</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <label class="postLabel" for="">Name</label>
+            <input id="postName" class="postInput" type="text">
+
+            <label class="postLabel" for="">Unit Price</label>
+            <input id="postPrice" class="postInput" type="text">
+
+            <label class="postLabel" for="">Units In Stock</label>
+            <input id="postStock" class="postInput" type="text">
+
+            <div class="buttonBox">
+                <button class="postBTN" onclick="postAxios()">Ekle</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Axios CDN Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.1/axios.min.js"
+        integrity="sha512-m9S8W3a9hhBHPFAbEIaG7J9P92dzcAWwM42VvJp5n1/M599ldK6Z2st2SfJGsX0QR4LfCVr681vyU5vW8d218w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- axiosPost JS Link -->
+    <script src="axiosPost.js"></script>
+</body>
+
+</html>
